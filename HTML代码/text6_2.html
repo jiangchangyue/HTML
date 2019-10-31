@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script>
+	var num=10;
+	document.write("直接输出全局变量"+num+"<br>");
+	document.write("调用window对象输出变量"+window.num+"<br>");
+
+	//所有全局函数都是window对象的方法
+	function test()
+	{
+		document.write('test'+"<br>");
+	}
+	test();
+	window.test();
+	// document.write();
+	// document.write();
+	// document.write();
+	</script> 
+
+	<script>
+
+
+	//弹窗
+	window.alert("hello");
+
+	//可输入值的弹窗
+	str=window.prompt('请输入一个数'，'100');
+	window.write(str);
+
+	//有返回值的弹窗
+	var result=window.confirm('是否确认');
+	document.write(result);
+
+	var btn=document.querySelector("button");
+	btn.addEventListener('click',function());
+
+	</script>
+
+	<script>
+	function myClick(e)
+	{
+		var target=e.target;
+		alert("id:"+target.id);
+		target.removeEventListener("click",myClick)
+	}; 
+
+
+	function goBack()
+	{
+
+	}
+	function 
+	</script>
+</head>
+<body>
+
+</body>
+</html>

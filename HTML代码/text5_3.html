@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<!-- 文档对象类型 -->
+	<a id='aid' href="http://www.baidu.com">www.baidu.com</a>
+	<button onclick="demo()">按钮</button>
+	<script>
+		function demo()
+		{
+			document.getElementById('aid').href='http://www.alibaba.com';
+			document.getElementById('aid').innerHTML='www.alibaba.com';
+		}
+	</script> 
+
+	<!-- 事件驱动和处理事件 -->
+	<script>
+		function changetext(id)
+		{
+			id.innerHTML="hello world!";
+		}
+	</script> 
+	<h1 onclick="changetext(this)">点击文本！</h1><!-- this表示标签自身 -->
+</body>
+</html>

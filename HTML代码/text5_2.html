@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<script>
+		//Math方法
+		document.write(Math.PI+"<br>");
+		document.write(Math.max(1,100,-23,10)+"<br>");
+		document.write(Math.min(1,100,-23,10)+"<br>");
+		document.write(Math.floor(2.333)+"<br>");
+		document.write(Math.ceil(2.333)+"<br>");
+		document.write(Math.abs(-5)+"<br>");
+	</script> 
+
+	<script>
+		//创建Date对象
+		var date=new Date();
+		document.write(date+"<br>");
+
+		var date1=new Date('2019-10-1 10:30:00');
+		document.write(date1+"<br>");
+
+		document.write(date.getHours()+"<br>");
+		document.write(date.getMinutes()+"<br>");
+		document.write(date.getSeconds()+"<br>");
+	</script> 
+
+	<script>
+		//Number对象   当 Number() 和运算符 new 一起作为构造函数使用时，它返回一个新创建的 Number 对象。
+		//如果不用 new 运算符，把 Number() 作为一个函数来调用，它将把自己的参数转换成一个原始的数值，并且返回这个值（如果转换失败，则返回 NaN）
+		var n=123.45;
+		var n1=new Number(123.4567);
+		var str=n.toString(10);//把数字转换成字符串，参数为进制数
+		document.write(str+"<br>");
+
+		var str1=n.toFixed(1);//把数字转换为字符串，参数为保留几位小数
+		document.write(str1+"<br>");
+
+		var str2=n1.toPrecision(3);//把数字格式化为指定的长度
+		document.write(str2+"<br>");
+	</script> 
+
+	<script>
+		//String对象
+		var str="javaWeb";
+		document.write(str+"<br>");
+		document.write(str.big()+"<br>");//用大号字体显示字符串
+		document.write(str.bold()+"<br>");//使用粗体显示字符串
+		document.write(str.charAt(2));//返回在指定位置的字符
+	</script> 
+</head>
+<body>
+		
+</body>
+</html>

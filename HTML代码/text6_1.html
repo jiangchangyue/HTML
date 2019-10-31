@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<!-- <script>
+		text="javascript "
+		str="how are you doning today";
+		document.write(str.split(" ")+"<br>");
+		document.write(str.split("")+"<br>");
+		document.write(str.split(" ",3)+"<br>");
+		</script>
+		<script>
+		window.onload=function () {
+			// body..
+			var aNodes=document.getElementsByTagName('a');
+			for (var i=0;i<aNodes.length;i++)
+			{
+				aNodes[i].onclick=function();
+				{
+					this.parentNode
+				};
+			}
+		}
+	</script>
+	<script>
+		window.onload=function()
+		{
+			var oDiv2=document.getElementsByTagName("oDiv2");
+			document.write(oDiv2.offsetParent);
+		}
+
+	</script>  -->
+	<script>
+		// 输出整个浏览器的高度和宽度
+		document.write('outerHeight:'+window.outerHeight+"<br>");
+		document.write('outerWidth:'+window.outerWidth+"<br>");
+					
+		// 输出窗口的文档显示区的高度和宽度
+		document.write('innerHeight:'+window.innerHeight+"<br>");
+		document.write('innerWidth:'+window.innerWidth+"<br>");
+					
+		// 输出浏览器相对于屏幕左上角(0,0)的坐标
+		document.write('screenX:'+window.screenX+"<br>");
+		document.write('screenY:'+window.screenY+"<br>");
+
+	</script> 
+
+	<script>
+		//window.navigator对象
+		navigator.appCodeName	//浏览器代码名的字符串表示
+		navigator.appName		//官方浏览器名的字符串表示
+		navigator.appVersion		//浏览器版本信息的字符串表示
+		navigator.cookieEnabled	//是否启用cookie
+		navigator.platform		//浏览器所在的计算机平台的字符串表示
+		navigator.userAgent		//返回和浏览器内核相关的信息
+
+	</script> 
+
+	<script>
+		//window.history对象
+		//history.back() -方法加载历史列表中的前一个 URL，与在浏览器点击后退按钮相同
+		//history.forward() -方法加载历史列表中的下一个 URL，与在浏览器中点击向前按钮相同
+
+	</script>
+
+	<script>
+		//window.location对象
+		window.location.href 		//页面当前地址
+		window.location.hostname	//页面主机名
+		window.location.pathname	//页面路径
+		window.location.protocol	//页面协议
+		window.location.port		//页面端口
+	</script>  
+</head>
+<body>
+	<!-- <ul id="ull">
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li> -->
+		<p>在页面显示一个时钟</p>
+		<p id="demo"></p>
+		<script>
+			// setInterval() - 间隔指定的毫秒数不停地执行指定的代码。
+			// setTimeout() - 在指定的毫秒数后执行指定代码。
+			var myVar=setInterval(function(){myTimer()},1000);
+			function myTimer()
+			{
+				var d=new Date();
+				var t=d.toLocaleTimeString();
+				document.getElementById("demo").innerHTML=t;
+			}
+		</script> 
+
+		<p>点击按钮，在等待3秒后弹出"Hello"。</p>
+		<button onclick="myfunction()">点我</button>
+		<script>
+			function myfunction()
+			{
+				setTimeout(function(){alert("Hello")},3000);
+			}
+		</script>  
+</body>
+</html>
